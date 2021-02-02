@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Underground Rennes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <link href="http://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href= "index.css">
+</head>
+ 
+<body>
+	<div class="title1">Statistics and visualisation of population in Essex (UK)</div>
+	<div class="title2">1. Introduction</div>
+	<p>The purpose of this study is to give some basic information about the population in Essex (UK county). Essex is a county in the region 
+	   East of England located in the South-East of England. According to <a href='https://en.wikipedia.org/wiki/Essex'>wikipedia</a>, the population 
+	   of Essex was 1,832,752 (mid-2019 est.) with an area of 3,670 km2. The data are coming from different open source platform: 
+	   <a href="https://osdatahub.os.uk">area boundaries</a> and <a href="https://www.ons.gov.uk">population</a>. The analysis and visualisation are 
+	   done with python using the libraries "bokeh" and "matplotlib" for the visualisation.</p>
+    <div class="title2">2. Population by local authorities</div>
+	<p>Essex is made of 14 ceremonial counties comprised of 12 non-metropolitan counties and 2 unitary authorities (Southend-on-Sea and Thurrock).</p>
+	<!-- <div class="container"> -->
+	  <table style="width:100%">
+		<tbody>
+		  <tr>
+			<td><img src= </td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/stationNumberOverTime.html" width="850" height="300"></object></p>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	<!-- </div> -->
+	<div class="title2">4. Base number</div>
+	<!-- <div class="container"> -->
+	  <table style="width:100%">
+		<tbody>
+		  <tr>
+			<td style="padding:15px">The number of bicycle bases changes in a similar way as the number of stations. In June 2009, there were 814 bases. 
+			    From september 2009 to August 2018, the number of base stays constant between 1,634 and 1,755. From August 2018, the 
+				number of bases drops to 1,145.</td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/bicycleBasesNumberOverTime.html" width="850" height="300"></object></p>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	<!-- </div> -->
+	<div class="title2">5. Analysis number of base per station</div>
+	<!-- <div class="container"> -->
+	  <table style="width:100%">
+		<tbody>
+		  <tr>
+			<td style="padding:15px">The number of base varies from 12 to 30. There are 13 stations having between 24 to 26 bases. 29% of the stations have 
+			    at least 16 bases. 56% of the stations have at least 20 bases. Only 11% of the stations have more than 26 bases.</td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/distributionNombreSocle.html" width="450" height="280"></object></p>
+			</td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/distributionCumuleeNombreSocle.html" width="450" height="280"></object></p>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	<!-- </div> -->
+	<div class="title2">6. Localisation of stations over the time</div>
+	<p style="margin-left:10%;margin-right:10%;text-align:centre"><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/evolutionBicycleBasesNumberSlider.html" width="950" height="550"></object></p>
+	<p>Since 2009, there have been 98 differents stations Vélo Star. The majority of them are still active (55%) and a big part of them 
+	   removed (36%). A smaller portion of these stations has been moved (8%) and only 1% of them are now closed.</p>
+	<div class="title2">7. Proximity to station</div>
+	<div class="container">
+	  <table style="width:100%">
+		<tbody>
+		  <tr>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/proximiteStationVeloStar.html" width="750" height="420"></object></p></td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/proximiteStationVeloStar_ColorScale.html" width="150" height="420"></object></p>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<p>In city centre, the proximity to a station is good. Moving away from the centre, some zones are less close to stations especially 
+	   in the South-West, North-West and North-East of the town. The South-East keeps a good proximity thanks to the station Poterie.</p>
+	<div class="title2">8. Accessibility to station</div>
+	<div class="container">
+	  <table style="width:100%">
+		<tbody>
+		  <tr>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/accessibiliteStationSocleVeloStar.html" width="750" height="420"></object></p></td>
+			<td><p><object type="text/html" data="https://florentdsgree.github.io/VeloStarRennes/accessibiliteStationSocleVeloStar_ColorScale.html" width="150" height="420"></object></p>
+			</td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<p>This map shows the accessibility to Velo Star service based on the distance and number of base per station. The city centre has the 
+	   highest accessibility while moving away reduce the accessibility. Despite the distance to the city centre, the accessibility can be 
+	   very high at immediate proximity to stations.</p>
+	
+	
+	
+	
+	
+
+
+</body>
+
+
+
+</html>

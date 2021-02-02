@@ -1,0 +1,44 @@
+body {
+	font-family : Montserrat;
+	font-size : 20px;
+	color : black;
+	text-align : justify;
+	margin-left : 50px;
+	margin-right : 50px;
+}
+
+.title1 {
+	font-family : Playfair Display;
+	font-size : 36px;
+	color : black;
+	text-align : center;
+	margin-top : 50px;
+	margin-bottom: 50px;
+}
+
+.title2 {
+	font-family : Playfair Display;
+	font-size : 30px;
+	color : black;
+	text-align : left;
+	margin-top : 40px;
+	margin-bottom : 40px;
+}
+
+.title3 {
+	font-family : Playfair Display;
+	font-size : 26px;
+	color : black;
+	text-align : left;
+	margin-top : 30px;
+	margin-bottom : 30px;
+}
+
+.title4 {
+	font-family : Playfair Display;
+	font-size : 22px;
+	color : black;
+	text-align : left;
+	margin-top : 20px;
+	margin-bottom : 20px;
+}
