@@ -20,72 +20,91 @@
 	<div class="title2">1. Introduction</div>
 	<p>The purpose of this study is to give some basic information about the population in Essex (UK county). Essex is a county in the region 
 	   East of England located in the South-East of England. According to <a href='https://en.wikipedia.org/wiki/Essex'>wikipedia</a>, the population 
-	   of Essex was 1,832,752 (mid-2019 est.) with an area of 3,670 km2. The data are coming from different open source platform: 
+	   of Essex was 1,832,752 (mid-2019 est.) with an area of 3,670 km<sup>2</sup>. The data are coming from different open source platform: 
 	   <a href="https://osdatahub.os.uk">area boundaries</a> and <a href="https://www.ons.gov.uk">population</a>. The analysis and visualisation are 
 	   done with python using the libraries "bokeh" and "matplotlib" for the visualisation.</p>
     <div class="title2">2. Population by local authorities</div>
-	<p>Essex is made of 14 ceremonial counties comprised of 12 non-metropolitan counties and 2 unitary authorities (Southend-on-Sea and Thurrock).</p>
+	<p>Essex is made of 14 ceremonial counties comprised of 12 non-metropolitan counties (Basildon, Braintree, Brentwood, Castle Point, City of Chelmsford, 
+	Colchester, Epping Forest, Harlow, Maldon, Rochford, Tendring, and Uttlesford) and 2 unitary authorities (Southend-on-Sea and Thurrock).</p>
 	<!-- <div class="container"> -->
 	  <table style="width:100%">
+		<colgroup>
+			<col span="1" style="width: 50%;">
+			<col span="1" style="width: 50%;">
+		</colgroup>
 		<tbody>
 		  <tr>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationEssexLA.png" height="100%"></td>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexLA.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationEssexLA.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexLA.png" height="100%"></td>
 		  </tr>
-		</tbody>
+		</tbody>  
 	  </table>
 	<!-- </div> -->
+	<br>
 	<p>The South and North-East of Essex are the most populated part of the county. Southend-on-Sea and Harlow are the most densely populated areas. 
-	   Some ward having a sea shore have a part of their area on the sea, this leads to approximate population density calculation as these areas are 
+	   Some areas with a sea shore have a part of their area on the sea, this leads to approximate population density calculation as these areas are 
 	   uninhabitable. As next step, a smaller division of the areas must be used for a more accurate analysis.</p>
 	<div class="title2">3. Population by ward</div>
 	<!-- <div class="container"> -->
 	  <table style="width:100%">
+		<colgroup>
+			<col span="1" style="width: 50%;">
+			<col span="1" style="width: 50%;">
+		</colgroup>
 		<tbody>
 		  <tr>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationEssexWard.png" height="100%"></td>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexWard.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationEssexWard.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexWard.png" height="100%"></td>
+		  </tr>
+		  <tr>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/populationDistributionEssexWard.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/populationCumulativeDistributionEssexWard.png" height="100%"></td>
+		  </tr>
+		  <tr>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/boundariesDistributionEssexWard.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/boundariesCumulativeDistributionEssexWard.png" height="100%"></td>
 		  </tr>
 		</tbody>
 	  </table>
 	<!-- </div> -->
-	<p>The South and North-East of Essex are the most populated part of the county. Some ward having a sea shore have a part of their area on the sea, 
-	   this leads to approximate population density calculation as these areas are uninhabitable. Some areas are still much bigger than others, hence 
-	   a smaller areas boundaries will be used as next step.</p>
+	<br>
+	<p>The ward population ranges from 1,920 to 16,936 inhabitants. The ward with population from 2,000 to 7,000 represents about 45% of all the ward. Around 15% 
+	   of the ward have 10,000 inhabitants or more. The South and North-East of Essex are the most populated part of the county. Some ward having a sea shore 
+	   have a part of their area on the sea, similarly as above this leads to approximate population density calculation. Around 50% of the ward have an area of 
+	   up to 5km<sup>2</sup>. Some areas are still much bigger than others (i.e. around Colchester), hence an even smaller areas boundaries will be used as next step.</p>
+	<div class="title2">4. Population by Lower layer Super Output Area (LSOA)</div>
+	<p>Different datasets are used in the part below. LSOA datasets are giving a total population in Essex of 1,846,655 (1,832,752 from wikipedia) and an area 
+	   of 3,677 km<sup>2</sup> (3,670 km<sup>2</sup> from wikipedia). Datasets values are comparable to wikipedia values. The difference of area size can be due 
+	   to the projection used to project the Earth surface into a 2D plane. The projection always leads to some approximation but in this case the size of LSOA is 
+	   small enough to ignore the Earth curvature hence this 1% difference is ok. Regarding the population the difference is about 0.3% which is fine as well.</p>
 	<!-- <div class="container"> -->
 	  <table style="width:100%">
+		<colgroup>
+			<col span="1" style="width: 50%;">
+			<col span="1" style="width: 50%;">
+		</colgroup>
 		<tbody>
 		  <tr>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/populationDistributionEssexWard.png" height="100%"></td>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/populationCumulativeDistributionEssexWard.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationEssexLSOA.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexLSOA.png" height="100%"></td>
+		  </tr>
+		  <tr>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/populationDistributionEssexLSOA.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/populationCumulativeDistributionEssexLSOA.png" height="100%"></td>
+		  </tr>
+		  <tr>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/boundariesDistributionEssexLSOA.png" height="100%"></td>
+			<td align="center"><img src="https://florentdsgree.github.io/EssexPopulation/boundariesCumulativeDistributionEssexLSOA.png" height="100%"></td>
 		  </tr>
 		</tbody>
 	  </table>
 	<!-- </div> -->
-	<p></p>
-	<div class="title2">4. Population by Lower layer Super Output Area(LSOA)</div>
-	<!-- <div class="container"> -->
-	  <table style="width:100%">
-		<tbody>
-		  <tr>
-			<td style="padding:15px">The number of base varies from 12 to 30. There are 13 stations having between 24 to 26 bases. 29% of the stations have 
-			    at least 16 bases. 56% of the stations have at least 20 bases. Only 11% of the stations have more than 26 bases.</td>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/populationDistributionEssexLSOA.png" width="450" height="300">
-			</td>
-			<td><img src="https://florentdsgree.github.io/EssexPopulation/populationCumulativeDistributionEssexLSOA.png" width="450" height="300">
-			</td>
-		  </tr>
-		</tbody>
-	  </table>
-	<!-- </div> -->
-	
-	
-	
-	
-	
-	
-
-
+	<br>
+	<p>The LSOA population ranges from 987 to 5,017 inhabitants. The LSOA with population from 1,300 to 1,900 represents about 70% of all the LSOA. Less then 5% 
+	   of the LSOA have 2,500 inhabitants or more. With the majority of the LSOA distributed in 3 bins, the population map shows a pretty even color map. Only some 
+	   areas are highlighted with higher population. It can be seen from these maps and from the distribution plots that the size of LSOA is for almost 70% of the 
+	   areas less than or equal to 1km<sup>2</sup>. These small areas are especially present in densily populated urban centers. The LSOA dataset allows to identify 
+	   the urban areas made of small area densily populated.</p>
 </body>
 
 
